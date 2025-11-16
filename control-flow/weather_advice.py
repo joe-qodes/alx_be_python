@@ -1,12 +1,12 @@
-enquire = input("What's the weather like today? (sunny/rainy/cold):").lower()
+weather = input("What's the weather like today? (sunny/rainy/cold):").lower()
 
-if enquire == 'sunny':
+if weather == 'sunny':
     print('Wear a t-shirt and sunglasses.')
 
-elif enquire == 'rainy':
+elif weather == 'rainy':
     print("Don't forget your umbrella and a raincoat.")
 
-elif enquire == 'cold':
+elif weather == 'cold':
     print('Make sure to wear a warm coat and a scarf.')
 
 else:
