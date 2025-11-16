@@ -4,21 +4,19 @@ time_bound = input("Is it time-bound? (yes/no): ").lower()
 
 
 while priority not in ["high", "medium", "low"]:
-    print("Invalid priority. Please enter high, medium, or low.")
+    print("Invalid priority! Please enter: high, medium, or low.")
     priority = input("Priority (high/medium/low): ").lower()
 
 
-reminder = f"'{task}' is a {priority} priority task"
-
 match priority:
     case "high":
-        reminder += ""
+        reminder = f"'{task}' is a HIGH priority task"
     case "medium":
-        reminder += ""
+        reminder = f"'{task}' is a MEDIUM priority task"
     case "low":
-        reminder += ""
+        reminder = f"'{task}' is a LOW priority task"
     case _:
-        reminder += ""
+        reminder = f"'{task}' is a task"
 
 if time_bound == "yes":
     reminder += " that requires immediate attention today!"
