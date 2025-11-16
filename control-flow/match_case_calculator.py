@@ -14,6 +14,8 @@ match operation:
         result = num1 * num2
         print(f'The result is: {result}')
     case '/':
+        if num2 == 0:
+            raise Exception("Cannot divide by zero")
         result = num1 / num2
         print(f'The result is: {result}')
 
