@@ -2,10 +2,14 @@ FAHRENHEIT_TO_CELSIUS_FACTOR = 5/9
 CELSIUS_TO_FAHRENHEIT_FACTOR = 9/5
 
 def convert_to_celcius(fahrenheit):
-    return fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR
+    temperature =  fahrenheit * FAHRENHEIT_TO_CELSIUS_FACTOR
+    return temperature
 
 def convert_to_fahrenheit(celcius):
-    return celcius * CELSIUS_TO_FAHRENHEIT_FACTOR
+    temperature = celcius * CELSIUS_TO_FAHRENHEIT_FACTOR
+    return temperature
+
+
 
 temperature = input('Enter the temperature to convert: ')
 try:
@@ -19,9 +23,9 @@ verify = verify.upper()
 
 if verify == 'C':
     converted = convert_to_fahrenheit(temperature)
-    print(f'{temperature}\u00b0F is {converted}\u00b0C')
+    print(f'{temperature}\u00b0C is {converted}\u00b0F')
 elif verify == 'F':
     converted = convert_to_celcius(temperature)
-    print(f'{temperature}\u00b0C is {converted}\u00b0F')
+    print(f'{temperature}\u00b0F is {converted}\u00b0C')
 else:
     print('Invalid Choice')
