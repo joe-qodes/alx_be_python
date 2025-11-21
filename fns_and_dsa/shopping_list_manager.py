@@ -9,17 +9,19 @@ def main():
     shopping_list = []
     while True:
         display_menu()
-        choice = input("Enter your choice: ")
+        choice = int(input("Enter your choice: "))
 
         if choice == '1':
             # Prompt for and add an item
             item = input('Kindly enter the item you want to add: ')
+            item = item.lower()
             shopping_list.append(item)
             print(f'You have sucessfully added {item} to the list')
         
         elif choice == '2':
             # Prompt for and remove an item
             item = input('Kindly enter the item you would like to remove: ')
+            item = item.lower()
             if item in shopping_list:
                 shopping_list.remove(item)
                 print(f'You have sucessfully removed {item} from the list')
