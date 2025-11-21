@@ -18,13 +18,13 @@ except:
     raise ValueError(f'Invalid temperature. Please enter an integer value')
 
 
-verify = input('Is the temperature in Celcius or Fahrenheit? (C/F): ')
-verify = verify.upper()
+temp_conversion = input('Is the temperature in Celcius or Fahrenheit? (C/F): ')
+temp_conversion = temp_conversion.upper()
 
-if verify == 'C':
+if temp_conversion == 'C':
     converted = convert_to_fahrenheit(temperature)
     print(f'{temperature}\u00b0C is {converted}\u00b0F')
-elif verify == 'F':
+elif temp_conversion == 'F':
     converted = convert_to_celcius(temperature)
     print(f'{temperature}\u00b0F is {converted}\u00b0C')
 else:
