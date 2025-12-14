@@ -10,4 +10,4 @@ def main():
     print(f"The product is: {product_result}")
 
 if __name__ == "__main__":
-    main()
+    main()  
